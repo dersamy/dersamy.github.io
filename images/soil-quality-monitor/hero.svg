@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#E4E7DE"/>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#C7CABF" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <rect x="0" y="0" width="800" height="600" fill="none" stroke="#A8AB9F" stroke-width="2"/>
+  <text x="400" y="290" font-family="monospace" font-size="22" fill="#52564E" text-anchor="middle">REPLACE IMAGE</text>
+  <text x="400" y="325" font-family="monospace" font-size="16" fill="#33604A" text-anchor="middle">pcb-khedra/hero.svg</text>
+</svg>
