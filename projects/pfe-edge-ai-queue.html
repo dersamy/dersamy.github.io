@@ -1,57 +1,82 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../_app/immutable/entry/start.DXrSVeRK.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/D0QB55mK.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/DEpP2OzE.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/OA8UcISh.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/B49eO5Xi.js" rel="modulepreload">
-		<link href="../_app/immutable/entry/app.BFBUhzlP.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/MG-ggwAq.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/rrZ_YcwN.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/CYhLyz_M.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/0.BOqny3Ni.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/C6PofU2D.js" rel="modulepreload">
-		<link href="../_app/immutable/nodes/3.-d-3WTTc.js" rel="modulepreload">
-		<link href="../_app/immutable/chunks/BnL04cJC.js" rel="modulepreload">
-		<!--gygcht--><meta name="description" content="Master's graduation project — cloud-independent human detection on a microcontroller."/><!----><title>Edge AI Human Detection System for Smart Queue Management — Samy</title>
-		<link href="../_app/immutable/assets/0.Ci5jHaGY.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/projects.DCpgz35w.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/3.BYQYScY4.css" rel="stylesheet">
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><!--[--><article><header class="detail-header grid-texture svelte-gygcht"><div class="container"><a class="back mono svelte-gygcht" href="/">← All projects</a> <h1 class="svelte-gygcht">Edge AI Human Detection System for Smart Queue Management</h1> <p class="tagline svelte-gygcht">Master's graduation project — cloud-independent human detection on a microcontroller.</p> <dl class="spec svelte-exf6tg"><!--[--><div class="row svelte-exf6tg"><dt class="svelte-exf6tg">STACK</dt> <dd class="svelte-exf6tg">ESP32-S3 · OV2640 · TensorFlow Lite Micro</dd></div><div class="row svelte-exf6tg"><dt class="svelte-exf6tg">STATUS</dt> <dd class="svelte-exf6tg">Completed, 2023</dd></div><div class="row svelte-exf6tg"><dt class="svelte-exf6tg">TYPE</dt> <dd class="svelte-exf6tg">Master's thesis (USTHB)</dd></div><!--]--></dl><!----></div></header> <div class="hero-image container svelte-gygcht"><img src="/images/pfe-edge-ai-queue/hero.svg" alt="" class="svelte-gygcht"/></div> <div class="container body svelte-gygcht"><!--[--><section class="section svelte-gygcht"><h2 class="mono svelte-gygcht">// Approach</h2> <!--[--><p class="svelte-gygcht">Optimized a TensorFlow classification model for microcontroller deployment via int8 quantization, then ran it through TensorFlow Lite for Microcontrollers on the ESP32-S3 for fully on-device inference — no host or cloud in the loop.</p><!--]--></section><section class="section svelte-gygcht"><h2 class="mono svelte-gygcht">// Result</h2> <!--[--><p class="svelte-gygcht">Real-time inference at 5 FPS on 96×96 grayscale frames, running standalone on a microcontroller — the core constraint was fitting a usable classification model into the ESP32-S3's memory and compute budget.</p><!--]--></section><!--]--></div></article> <footer class="svelte-jz8lnl"><div class="container footer-inner svelte-jz8lnl"><div><p class="label mono svelte-jz8lnl">// CONTACT</p> <h3 class="svelte-jz8lnl">Let's talk hardware.</h3></div> <div class="links mono svelte-jz8lnl"><a href="mailto:derradji.r.samy@gmail.com" class="svelte-jz8lnl">derradji.r.samy@gmail.com</a> <a href="https://www.linkedin.com/in/samyder" target="_blank" rel="noopener noreferrer" class="svelte-jz8lnl">LinkedIn</a> <a href="https://github.com/dersamy" target="_blank" rel="noopener noreferrer" class="svelte-jz8lnl">GitHub</a> <a href="/cv.pdf" class="svelte-jz8lnl">Download CV</a></div></div> <p class="eof mono container svelte-jz8lnl">// end of file</p></footer><!----><!--]--><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_1mtcu3e = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("../_app/immutable/entry/start.DXrSVeRK.js"),
-						import("../_app/immutable/entry/app.BFBUhzlP.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data: [null,null],
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge AI Human Detection System for Smart Queue Management | Samy Derradji</title>
+<meta name="description" content="Custom ESP32-S3 + OV2640 board running a quantized TensorFlow Lite Micro model for on-device human detection at 5 FPS.">
+<link rel="canonical" href="https://dersamy.github.io/projects/pfe-edge-ai-queue.html">
+<meta name="theme-color" content="#eef0ea">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Samy Derradji">
+<meta property="og:title" content="Edge AI Human Detection System for Smart Queue Management | Samy Derradji">
+<meta property="og:description" content="Custom ESP32-S3 + OV2640 board running a quantized TensorFlow Lite Micro model for on-device human detection at 5 FPS.">
+<meta property="og:url" content="https://dersamy.github.io/projects/pfe-edge-ai-queue.html">
+<meta property="og:image" content="https://dersamy.github.io/images/pfe-edge-ai-queue/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edge AI Human Detection System for Smart Queue Management | Samy Derradji">
+<meta name="twitter:description" content="Custom ESP32-S3 + OV2640 board running a quantized TensorFlow Lite Micro model for on-device human detection at 5 FPS.">
+<meta name="twitter:image" content="https://dersamy.github.io/images/pfe-edge-ai-queue/hero.jpg">
+<link rel="icon" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-nav">
+<div class="container nav-inner">
+<a class="wordmark" href="../index.html" aria-label="Samy Derradji, home">samy<span>.</span>derradji</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+<nav class="nav-links" id="nav-links" aria-label="Main">
+<a href="../index.html#services">Services</a>
+<a href="../index.html#work">Work</a>
+<a href="../index.html#process">Process</a>
+<a href="../index.html#faq">FAQ</a>
+<a class="btn btn-primary btn-sm" href="../index.html#contact">Start a project</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<header class="detail-header grid-texture">
+<div class="container">
+<a class="back" href="../index.html#work">&larr; All work</a>
+<h1>Edge AI Human Detection System for Smart Queue Management</h1>
+<p class="tagline">Master&#x27;s graduation project: cloud-independent human detection on a microcontroller.</p>
+<dl class="spec "><div class="row"><dt>STACK</dt><dd>ESP32-S3 · OV2640 · TensorFlow Lite Micro</dd></div><div class="row"><dt>STATUS</dt><dd>Completed, 2023</dd></div><div class="row"><dt>TYPE</dt><dd>Master&#x27;s thesis (USTHB)</dd></div></dl>
+<div class="hero-image"><img src="../images/pfe-edge-ai-queue/hero.jpg" alt="Edge AI Human Detection" width="480" height="640"></div>
+</div>
+</header>
+<div class="container body">
+<section><h2>// The brief</h2><p>Occupancy and queue tracking usually relies on a server or cloud service. The goal was fully on-device human detection on a microcontroller, aimed at real-time queue management.</p></section>
+<section><h2>// What I built</h2><p>A custom ESP32-S3 + OV2640 PCB (EasyEDA, JLCPCB) with a 3D-printed enclosure. I optimized a TensorFlow classification model for microcontroller deployment via int8 quantization, then ran it through TensorFlow Lite for Microcontrollers on the ESP32-S3 for fully on-device inference, with no host or cloud in the loop.</p></section>
+<section><h2>// Result</h2><p>Real-time inference at 5 FPS on 96×96 grayscale frames, running standalone on a microcontroller. The core constraint was fitting a usable classification model into the ESP32-S3's memory and compute budget.</p></section>
+</div>
+<section class="cs-cta"><div class="container"><h2>Need something similar?</h2><a class="btn btn-primary btn-lg" href="../index.html#contact">Start a project &rarr;</a></div></section>
+<div class="container"><nav class="pn" aria-label="More projects">
+<a class="prev" href="qosoc.html" rel="prev"><small>&larr; PREVIOUS</small>QoSoC: RISC-V SoC</a><a class="next" href="mobot-robotics-mini.html" rel="next"><small>NEXT &rarr;</small>Entry-Level Robotics Controller</a>
+</nav></div>
+</main>
+<section class="contact grid-texture" id="contact" aria-labelledby="contact-h">
+<div class="container">
+<div class="label">// CONTACT</div>
+<h2 id="contact-h">Have a board or firmware to build? Let's talk.</h2>
+<p class="lead">Send a short description of your project. I reply within 24 hours with questions or a quote.</p>
+<div class="cta-row"><a class="btn btn-primary btn-lg" href="mailto:derradji.r.samy@gmail.com?subject=Project%20inquiry&body=Project%3A%0A%0AWhat%20it%20should%20do%3A%0A%0AQuantity%3A%0A%0ADeadline%3A%0A%0ABudget%20range%3A%0A">Email me about your project</a></div>
+<p class="email-line">derradji.r.samy@gmail.com</p>
+<div class="contact-links">
+<!-- SAMY: paste your Fiverr profile URL into href and delete the hidden attribute -->
+<a data-placeholder href="#" hidden>Fiverr</a>
+<!-- SAMY: paste your Upwork profile URL into href and delete the hidden attribute -->
+<a data-placeholder href="#" hidden>Upwork</a>
+<a href="https://www.linkedin.com/in/samyder/" rel="noopener">LinkedIn</a>
+<a href="https://github.com/dersamy" rel="noopener">GitHub</a>
+<a href="../cv.pdf">Download CV</a>
+</div>
+<div class="eof"><span>// end of file</span><span>&copy; 2026 Samy Derradji</span></div>
+</div>
+</section>
+<script src="../assets/js/main.js"></script>
+</body>
 </html>
